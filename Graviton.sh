@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ####Colors####
 
 #Red thin font#
