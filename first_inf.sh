@@ -1,6 +1,5 @@
 #!/bin/bash
 ####Colors####
-
 #Red thin font#
 R='\e[0;31m'
 #Red bold font#
