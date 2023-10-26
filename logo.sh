@@ -1,0 +1,68 @@
+#!/bin/bash
+
+####Colors####
+# Orange bold font#
+O1='\e[0;33m'
+# Yellow thin font#
+BL='\e[0;93m'
+# RED bold font#
+BL1='\e[1;31m'
+# White thin font#
+W='\e[0m'
+# White bold font#
+W1='\e[1;0m'
+#### Clean this page###
+clear
+####Logo 3Logic on the start page####  
+echo -e ${BL1} ' '
+echo -e ${BL1} ' '
+echo -e ${BL1} '				                                                      .^.                .^.                                                      '
+echo -e ${BL1} '				                                                  .:^~~~.                .~~~^:.                                                  '
+echo -e ${BL1} '				                                               .^~~~~~~~.                .~~~~~~~^:.                                              '
+echo -e ${BL1} '				                                           .:~~~~~~~~~~^.                 ^~~~~~~~~~~^.                                           '
+echo -e ${BL1} '				                                       .:^~~~~~~~~~^:.                      .:^~~~~~~~~~^:.                                       '
+echo -e ${BL1} '				                                    :^~~~~~~~~~~^.                              .:~~~~~~~~~~^:                                    '
+echo -e ${BL1} '				                                  :~~~~~~~~~^:.             :~~   .~~.             ..^~~~~~~~~~:                                  '
+echo -e ${BL1} '				                                 ^~~~~~~^:.                ^~~~   .~~~:                .:^~~~~~~^                                 '
+echo -e ${BL1} '				                                 ~~~~~~:                  ^~~~~   .~~~~^                  :~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.                .~~~~~~   .~~~~~~.                .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.               :~~~~~~~   .~~~~~~~.               .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.              ^~~~~~~~~   .~~~~~~~~:              .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.             ^~~~~~~~~~   .~~~~~~~~~^             .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.           .~~~~~~~~~~~   .~~~~~~~~~~~.           .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.          :~~~~~~~~~~^:    :^~~~~~~~~~~.          .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.         :~~~~~~~~:.          .^~~~~~~~~:         .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~~~~.        ^~~~~~^.      .:^^:.     .:^~~~~~^        .~~~~~~.                                '
+echo -e ${BL1} '				                                .~~~^:.        ~~~^:.     .:^~~~~~~~~^:.     .:^~~~        .:^~~~.                                '
+echo -e ${BL1} '				                                 ^.            ..      .^~~~~~~~~~~~~~~~~^.      ..            .^.                                '
+echo -e ${BL1} '				                                                   .^~~~~~~~~~~~~~~~~~~~~~~~^:.                                                   '
+echo -e ${BL1} '				                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~:                                                  '
+echo -e ${BL1} '                                                                                                                                  '
+echo -e ${BL1} '                                                                                                                                  '
+echo -e ${BL1} '       	                                                                                                                           '
+echo -e ${BL1} '				                                              .::.                              .^:.                                              '
+echo -e ${BL1} '				                                          .:^~~~~~~^:.                      .:~~~~~~~^:.                                          '
+echo -e ${BL1} '				                                           .^~~~~~~~~~~^:.              .:^~~~~~~~~~^:.                                           '
+echo -e ${BL1} '				                                              .:^~~~~~~~~~~^.       .:^~~~~~~~~~~^.                                               '
+echo -e ${BL1} '				                                                  .:^~~~~~~~~~~:.:^~~~~~~~~~~^:.                                                  '
+echo -e ${BL1} '				                                                      .:^~~~~~~~~~~~~~~~~^:.                                                      '
+echo -e ${BL1} '				                                                          .^~~~~~~~~~^:.                                                          '
+echo -e ${BL1} '				                                                              ..::..                                                              '
+echo -e ${BL1} '		                                                                                                                                  '
+echo -e ${BL1} '	                                                                                                                                  '
+echo -e ${BL1} '         	            '
+echo -e ${BL1} '                		                                                                                                                  '
+echo -e ${BL1} '		                                                                                                                                  '
+echo -e ${BL1} ' ' 
+echo -e ${BL1} ' '
+echo -e ${W} '		           		 			      Welcome to the technical script for the GRAVITON server '
+echo -e ${W} ' 					                     This script can will help you update and get information about the server'
+echo -e ${BL} ' '
+echo -e ${BL} ' '
+echo -e ${BL} ' ' 
+echo -e ${BL}'																						Developed by A. Repina'
+echo -e ${BL} ' 																						Server Dev Department'
+echo -e ${BL} ' 																						Department of Product Marketing'
+echo -e ${BL} ' 																						3Logic Group'
+echo -e ${O1} ' ' 
+read -p "								     		*  Please press Enter to continue  *"
