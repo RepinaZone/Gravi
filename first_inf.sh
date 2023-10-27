@@ -118,6 +118,7 @@ clear
 
 #### FILE FOR SAVED####
 
+
 Sfile=$( date '+%Y-%m-%d_%H-%M' )
 touch "$Sfile"
 echo -e "Product Name      : $PN_FRU" >> "$Sfile"
