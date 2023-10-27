@@ -61,7 +61,7 @@ echo -ne "
 $(ColorB 'Choose an option :            ') "
         read a
         case $a in
-          1) clear ;  button ; clear ; ./auto_menu.sh ;;
+          1) clear ; clear ; ./first_inf.sh ;;
           2) clear ; button ; clear ; ./hand_menu.sh ;;
           0) clear ; exit 0;
         esac

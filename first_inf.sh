@@ -31,8 +31,7 @@ NA="N/A"
 #MSN=`dmidecode --type baseboard | grep "Serial Number" | awk '{print $3}'`
 #MBV=`dmidecode --type baseboard | grep  "Version" | awk '{print $2}'`
 
-
-#### Information about BIOS####
+###Information about BIOS####
 
 BVER=`dmidecode -t bios | grep "Version" | awk -F"Version: " '{print $2}'`
 if [[ $BVER = '' ]] ; then BVER=$NA; fi
@@ -76,16 +75,16 @@ echo -e ${W} " "
 #### About Product ####
 echo -ne ${BL1} "	-----  Product Information  -----"
 echo -e ${W}  "  \n  "
-echo -e "	        Product Name      :  $PN_FRU"
-echo -e "	        Product Part Num. :  $PNU_FRU"
-echo -e "	        Product Serial    :  $PS_FRU"
+echo -e "	        Product Name      :  $PN_FRU"  
+echo -e "	        Product Part Num. :  $PNU_FRU" 
+echo -e "	        Product Serial    :  $PS_FRU" 
 echo -e " \n "
 
 ##### About MB ####
 echo -ne  ${BL1} "	-----  MotherBoard Information  -----"
 echo -e ${W}  "   \n "
-echo -e "		MotherBoard       :  $MP_FRU"
-echo -e "		Serial Number     :  $MS_FRU"
+echo -e "		MotherBoard       :  $MP_FRU" 
+echo -e "		Serial Number     :  $MS_FRU" 
 echo -e "		Manufaction Date  :  $MMF_FRU"
 echo -e "  \n "
 
@@ -99,7 +98,7 @@ echo -e " \n "
 #### About BMC ####
 echo -ne ${BL1} "	-----  BMC Informaton  -----"
 echo -e ${W} "	\n "
-echo -e "		BMC FW Version   :  $BMCVER"
+echo -e "		BMC FW Version   :  $BMCVER" 
 echo -e "		IP Address BMC   :  $IP_BMC"
 echo -e " 		BMC MAC 1        :  $M1_BMC"
 echo -e " 		BMC MAC 2        :  $M2_BMC"
@@ -107,13 +106,29 @@ echo -e " "
 echo -e " "
 echo -e " \n "
 
+#### CHECK U'R PLATFORM MODEL"
 
+clear
 
-#ipmitool lan print 8
+./Uniq.sh
 
-
-
-### !!!!!!!!!!!!!!!!!!!!!!!!!!!! АНЯ СДЕЛАЙ ПЕРЕНАПРАВЛЕНИE !!!!!!!!!!!!!! ###
-#### save this infirmantion in file ####
+#touch $( date '+%Y-%m-%d_%H-%M-%S' ) && << null.sh
 
 #touch $( date '+%Y-%m-%d_%H-%M' ) && << log_1.sh
+
+#### FILE FOR SAVED####
+
+Sfile=$( date '+%Y-%m-%d_%H-%M' )
+touch "$Sfile"
+echo -e "Product Name      : $PN_FRU" >> "$Sfile"
+echo -e "Product Part Num. : $PNU_FRU" >> "$Sfile" 
+echo -e "Product Serial    : $PS_FRU" >>"$Sfile"
+echo -e "MotherBoard       :  $MP_FRU" >> "$Sfile"
+echo -e "Serial Number     :  $MS_FRU" >> "$Sfile"
+echo -e "Manufaction Date  :  $MMF_FRU" >> "$Sfile"
+echo -e "BMC FW Version    :  $BMCVER" >> "$Sfile"
+echo -e "IP Address BMC    :  $IP_BMC" >> "$Sfile"
+echo -e "BMC MAC 1         :  $M1_BMC" >> "$Sfile"
+echo -e "BMC MAC 2         :  $M2_BMC" >> "$Sfile"
+
+

@@ -1,1 +1,0 @@
-AfuEfix64.efi TAIGA2.15 /p /b /n /k /me
