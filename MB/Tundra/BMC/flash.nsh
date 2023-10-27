@@ -1,0 +1,1 @@
+socflash.efi if=TUNDRA_1.30.04.ima option=r <a y.dat

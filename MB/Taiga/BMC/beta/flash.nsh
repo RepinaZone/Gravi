@@ -1,0 +1,1 @@
+socflash.efi if=TAIGA_2.01.03_MFG.ima option=r <a y.dat

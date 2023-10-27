@@ -1,0 +1,1 @@
+AfuEfix64.efi TAIGA2.19B /p /b /n /k /me

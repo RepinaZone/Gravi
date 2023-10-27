@@ -48,7 +48,21 @@ button(){
          read -p "           Please press Enter to continue          "
          echo -e $W " "
 }
+
+tundra() {
+	  cd MB/Tundra
+	  ls -la
+}
+taiga() {
+	  cd MB/Taiga
+	  ls -la
+}
+arctica() {
+  	  cd MB/Arctica
+ 	  ls -la
+}
 echo -ne $W " \n \n "
+
 #### Creating the main menu ####
 a_menu() {
 echo -ne "
@@ -63,12 +77,14 @@ echo -ne "
 $(ColorB 'Choose an option :            ') "
         read a
         case $a in
-          1) clear ; button ; clear ; a_menu ;;
-          2) clear ; button ; clear ; a_menu ;;
-	  3) clear ; button ; clear ; a_menu ;;
+          1) clear ; button ; clear ; tundra  ;;
+          2) clear ; button ; clear ; taiga ;;
+	  3) clear ; button ; clear ; arctica ;;
 	  4) clear ; ./gen_menu.sh;;
           0) clear ; exit 0;
         esac
 }
 a_menu
+
+
 

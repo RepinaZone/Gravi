@@ -1,0 +1,1 @@
+AfuEfix64.efi ARCTICA0.10D /p /b /n /k /l
