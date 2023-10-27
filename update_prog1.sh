@@ -71,7 +71,7 @@ $(ColorB 'Choose an option :            ') "
         case $a in
           1) clear ;  button ; clear ; KEK ;;
           2) clear ; button ; clear ;  KEK ;;
-	  3) clear ; button ; clear ;  KEK ;;
+	  3) clear ; button ; clear ;  ./Upd_Fru.sh ;;
 	  4) clear ; button ; clear ;  KEK;;
 	  5) clear ; button ; clear ; ./gen_menu.sh ;;
           0) clear ; exit 0;

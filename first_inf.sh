@@ -63,6 +63,11 @@ if [[ $MS_FRU = '' ]] ; then MS_FRU=$NA; fi
 MMF_FRU=`echo $FRU_PRINT | xxd -r -p | grep "Board Mfg Date" | awk -F"Board Mfg Date        : " '{print $2}'`
 if [[ $MMF_FRU = '' ]] ; then MMF_FRU=$NA; fi
 
+button(){
+         echo -e $R1" \n \n \n \n  "
+         read -p "           Please press Enter to continue          "
+         echo -e $W " "
+}
 
 #### PRINT #####
 
@@ -107,6 +112,8 @@ echo -e " "
 echo -e " \n "
 
 #### CHECK U'R PLATFORM MODEL"
+
+button
 
 clear
 

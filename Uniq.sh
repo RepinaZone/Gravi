@@ -7,8 +7,7 @@ UNIQMB=`echo "TEST"`
 ####ТУТ ДОЛЖНА БЫТЬ ТУНДРА  В ПЕРВОМ ЦИКЛЕ###
 if (( UNIQMB == "TEST" ))
 then
- cd updates
- ls -l
+ cd updates && ./Tu_FRU.sh
  echo "U are THE BEST !!!!!!!!!! " |lolcat
 elif (( UNIQMB == ARCTICA ))
 then
