@@ -52,15 +52,16 @@ echo -ne $W " \n \n "
 #### Creating the main menu ####
 gen_menu() {
 echo -ne "
-Select the type of testing:  А тут на русском тест
-..................................................
+           А тут на русском тест:
+.................................................................
+
 	 ------------------------------------------- \n 	| $(ColorG '1)') Automatic update of the entire system  | \n	 -------------------------------------------
   	 ------------------------------------------- \n 	| $(ColorG '2)') Manual update of the entire system     | \n	 -------------------------------------------
   	 ------------------------------------------- \n 	| $(ColorG '0)')              Exit                      | \n	 -------------------------------------------
 $(ColorB 'Choose an option :            ') "
         read a
         case $a in
-          1) clear ; ./first_inf.sh ; button ; clear ; gen_menu ;;
+          1) clear ; ./first_inf.sh ; button ; clear ; ./auto_menu.sh ;;
           2) clear ; ./first_inf.sh ; gen_menu ;;
           0) clear ; exit 0;
         esac
