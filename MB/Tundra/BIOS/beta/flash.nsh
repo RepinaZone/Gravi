@@ -1,1 +1,0 @@
-AfuEfix64.efi TUNDRA2.19J /p /b /n /k /me
